@@ -13,15 +13,15 @@ import {
 
 const features = [
   {
-    name: "Advanced Entity Retrieval",
+    name: "Knowledge Graphs Indexing",
     description:
       "LamAPI",
     icon: SquareChartGantt,
   },
   {
-    name: "Dynamic Entity Disambiguation",
+    name: "API services",
     description:
-      "Adapts seamlessly to your data environment, employing tailored techniques for both scenarios with and without training datasets.",
+      "LamAPI",
     icon: SquarePen,
   },
 ];
@@ -52,9 +52,8 @@ export default function Home(): JSX.Element {
               <div className="place-content-center max-w-lg pl-2">
                 <p className=" text-gray-800 dark:text-gray-100 sm:text-xl lg:mb-8 md:text-2xl lg:text-3xl">
                   {" "}
-                  Supervised and Unsupervised Semantic Table Interpretation
-                  Approach with Feature/Vector Entity Retrieval and
-                  Disambiguation Techniques
+                  A Comprehensive Tool for String-based
+                  Entity Retrieval with Type-base Filters
                 </p>
                 <a
                   href="/lamapi-docs/docs/introduction"
@@ -73,7 +72,8 @@ export default function Home(): JSX.Element {
               <div className="flex flex-col justify-center lg:pr-8 lg:pt-4">
                 <div className="lg:max-w-lg">
                   <p className="mt-4 text-lg leading-6 text-gray-700 dark:text-gray-100">
-                    Discover LamAPI
+                    LamAPI supports string-based retrieval but also hard and soft filters based on an input entity type (i.e., rdf:type for DBpedia and Property:P31 for Wikidata). 
+                    Hard type filters remove non matching results, while soft type filters promote or demote results when an exact match is not feasible.
                   </p>
                   <p className="mt-4 text-lg leading-6 text-gray-700 dark:text-gray-100">
                     Key Features:
