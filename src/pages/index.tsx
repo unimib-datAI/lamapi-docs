@@ -9,6 +9,7 @@ import {
   SquarePen,
   SquareChartGantt,
   Blocks,
+  ExternalLink,
 } from "lucide-react";
 
 const features = [
@@ -52,6 +53,28 @@ export default function Home(): JSX.Element {
                   className="text-center inline-flex items-center border-none dark:bg-primarypink bg-secondarypink dark:text-gray-800 dark:hover:text-gray-800 hover:text-stone-100 text-stone-100 font-sm rounded-lg text-sm px-5 py-2.5 me-2 mb-2 font-semibold"
                 >
                   Learn more <ArrowRight className="ml-2 h-5 w-5" />
+                </a>
+                <a
+                  href="https://lamapi.datai.disco.unimib.it/"
+                  className="hover:text-secondarypink text-center inline-flex items-center dark:text-primarypink text-secondarypink font-sm rounded-lg text-sm px-5 py-2.5 me-2 mb-2 border-2 border-secondarypink dark:border-primarypink border-solid font-semibold"
+                >
+                  Try it out{" "}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    className="lucide lucide-external-link ml-2 h-5 w-5"
+                  >
+                    <path d="M15 3h6v6"></path>
+                    <path d="M10 14 21 3"></path>
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  </svg>{" "}
                 </a>
               </div>
               <img
@@ -99,7 +122,7 @@ export default function Home(): JSX.Element {
               </div>
               <img
                 alt="Product screenshot"
-                src="/mantistable-ui-docs/img/mantisUI.png"
+                src="/lamapi-docs/img/lamapihome.png"
                 className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
               />
             </div>
