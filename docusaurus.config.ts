@@ -58,12 +58,12 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/mammotab-social-card.png',
+    image: 'img/llamapisocial.png',
     navbar: {
       title: 'LamAPI',
       logo: {
         alt: 'LamAPI',
-        src: 'img/selbat.png',
+        src: 'img/lamapi.svg',
       },
       items: [
         {

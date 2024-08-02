@@ -16,8 +16,8 @@ module.exports = {
         lg: "997px",
       },
       colors: {
-        purple: "#33027C",
-        lightpurple: "#bba8d7",
+       primarypink: "#FBB2CC",
+       secondarypink: "#F1096E",
       },
     },
   },

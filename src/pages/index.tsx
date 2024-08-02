@@ -14,14 +14,12 @@ import {
 const features = [
   {
     name: "Knowledge Graphs Indexing",
-    description:
-      "LamAPI",
+    description: "LamAPI",
     icon: SquareChartGantt,
   },
   {
     name: "API services",
-    description:
-      "LamAPI",
+    description: "LamAPI",
     icon: SquarePen,
   },
 ];
@@ -29,39 +27,38 @@ const features = [
 export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="LamAPI"
-    >
+    <Layout title={`Hello from ${siteConfig.title}`} description="LamAPI">
       <main>
         <img
-          src="/lamapi-docs/img/bblurryselbat.svg"
-          className="absolute opacity-20 -top-[45rem]"
+          src="/lamapi-docs/img/bbblurry.svg"
+          className="absolute opacity-20 dark:opacity-10 -top-[30rem]"
         />
-        <section className="relative z-10">
-          <div className="place-content-center mx-4 lg:gap-12 xl:gap-12 lg:pt-10 lg:grid-cols-12 pb-12">
-            <h1 className="md:text-center pt-12 mb-12 leading-none text-purple sm:text-6xl md:text-7xl lg:text-8xl dark:text-lightpurple font-bold tracking-widest">
-              LamAPI
-            </h1>
-            <div className="justify-center flex flex-col md:flex-row max-w-6xl gap-20 pb-2 mx-auto">
-              <img
-                alt="Logo"
-                src="/lamapi-docs/img/selbat.svg"
-                className="lg:mt-0 lg:col-span-4 lg:flex w-[20rem] object-fit-cover h-auto max-w-full"
-              />
+        <section className="mx-auto max-w-6xl relative z-10">
+          <div className="mx-4 place-content-center lg:gap-12 xl:gap-12 lg:grid-cols-12 pb-12 pt-12">
+            <div className="justify-center flex flex-col md:flex-row max-w-8xl gap-12 pb-2 mx-auto">
               <div className="place-content-center max-w-lg pl-2">
-                <p className=" text-gray-800 dark:text-gray-100 sm:text-xl lg:mb-8 md:text-2xl lg:text-3xl">
-                  {" "}
-                  A Comprehensive Tool for String-based
-                  Entity Retrieval with Type-base Filters
+                <h1 className="pt-12 leading-none text-secondarypink sm:text-4xl md:text-5xl lg:text-6xl dark:text-primarypink font-bold tracking-wide">
+                  LamAPI
+                </h1>
+                <p className=" text-stone-800 dark:text-stone-100 sm:text-xl lg:mb-8 md:text-xl lg:text-2xl">
+                  LamAPI supports string-based retrieval but also hard and soft
+                  filters based on an input entity type (i.e., rdf:type for
+                  DBpedia and Property:P31 for Wikidata). Hard type filters
+                  remove non matching results, while soft type filters promote
+                  or demote results when an exact match is not feasible.
                 </p>
                 <a
-                  href="/lamapi-docs/docs/introduction"
-                  className="hover:text-gray-100 text-center inline-flex items-center border-none dark:bg-lightpurple dark:text-gray-900 text-gray-100 font-sm rounded-lg text-sm px-5 py-2.5 me-2 mb-2 bg-purple font-semibold"
+                  href="/steellm-docs/docs/introduction"
+                  className="text-center inline-flex items-center border-none dark:bg-primarypink bg-secondarypink dark:text-gray-800 dark:hover:text-gray-800 hover:text-stone-100 text-stone-100 font-sm rounded-lg text-sm px-5 py-2.5 me-2 mb-2 font-semibold"
                 >
-                  Learn more <ArrowRight className="ml-2 h-5 w-5" />{" "}
+                  Learn more <ArrowRight className="ml-2 h-5 w-5" />
                 </a>
               </div>
+              <img
+                alt="Logo"
+                src="/lamapi-docs/img/lamapi.svg"
+                className="lg:mt-0 lg:col-span-4 lg:flex w-[20rem] object-fit-cover max-w-full"
+              />
             </div>
           </div>
         </section>
@@ -72,8 +69,12 @@ export default function Home(): JSX.Element {
               <div className="flex flex-col justify-center lg:pr-8 lg:pt-4">
                 <div className="lg:max-w-lg">
                   <p className="mt-4 text-lg leading-6 text-gray-700 dark:text-gray-100">
-                    LamAPI supports string-based retrieval but also hard and soft filters based on an input entity type (i.e., rdf:type for DBpedia and Property:P31 for Wikidata). 
-                    Hard type filters remove non matching results, while soft type filters promote or demote results when an exact match is not feasible.
+                    LamAPI supports string-based retrieval but also hard and
+                    soft filters based on an input entity type (i.e., rdf:type
+                    for DBpedia and Property:P31 for Wikidata). Hard type
+                    filters remove non matching results, while soft type filters
+                    promote or demote results when an exact match is not
+                    feasible.
                   </p>
                   <p className="mt-4 text-lg leading-6 text-gray-700 dark:text-gray-100">
                     Key Features:
@@ -84,7 +85,7 @@ export default function Home(): JSX.Element {
                         <div className="inline font-bold text-gray-900 dark:text-gray-300">
                           <feature.icon
                             aria-hidden="true"
-                            className="absolute left-1 top-1 h-5 w-5 text-primaryGreen dark:text-secondaryGreen"
+                            className="absolute left-1 top-1 h-5 w-5 text-secondarypink dark:text-primarypink"
                           />
                           {feature.name}
                         </div>
