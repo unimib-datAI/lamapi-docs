@@ -49,7 +49,7 @@ export default function Home(): JSX.Element {
                   or demote results when an exact match is not feasible.
                 </p>
                 <a
-                  href="/steellm-docs/docs/introduction"
+                  href="/lamapi-docs/docs/introduction"
                   className="text-center inline-flex items-center border-none dark:bg-primarypink bg-secondarypink dark:text-gray-800 dark:hover:text-gray-800 hover:text-stone-100 text-stone-100 font-sm rounded-lg text-sm px-5 py-2.5 me-2 mb-2 font-semibold"
                 >
                   Learn more <ArrowRight className="ml-2 h-5 w-5" />
